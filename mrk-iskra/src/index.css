@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+html,body {
+    height:1310px;
+    background:#bec4c0;
+}
+
+*{
+    width:100%;
+    //border:1px solid red;
+}
