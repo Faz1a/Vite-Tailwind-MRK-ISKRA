@@ -2,8 +2,6 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
-
-
 function App() {
   const [count, setCount] = useState(0);
 
@@ -48,13 +46,14 @@ function App() {
             </span>
           </h1>
           <div className="flex space-x-20">
-            <a href="./src/assets/form.html"
+            <a
+              href="./src/assets/form.jsx"
               type="button"
               class="w-2/4 h-20 ml-80 mt-10 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-2xl px-5 py-2.5 text-center mr-2 mb-2 "
             >
-             <h1 className="mt-3">Učlani se ovdje !</h1>
+              <h1 className="mt-3">Učlani se ovdje !</h1>
             </a>
-            
+
             <img className="w-32 justify-end" src="./Images/clanska.png" />
           </div>
         </div>
@@ -83,7 +82,6 @@ function App() {
                   className="w-44"
                   src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Badge-Logo.wine.svg"
                 />
-                
               </div>
               <div className="w-44 mr-32 mt-2">
                 <img src="./Images/app.png" />
@@ -101,7 +99,7 @@ function App() {
                 scope="col"
                 class="px-6 py-3 bg-gradient-to-r from-plava via-blue-800 to-plava"
               >
-                Klub
+                Pozicija
               </th>
               <th scope="col" class="px-6 py-3 bg-plava">
                 Gol-razlika
@@ -170,15 +168,44 @@ function App() {
             </tr>
           </tbody>
         </table>
+        <form className="flex w-5/6 ml-32 h-96 mt-2">
+          <div className="h-96 w-1/2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 font-extrabold rounded-xl ml-72">
+            <h1 className="text-center text-3xl font-Kanit text-cyan-50 ">
+              Registracijska forma
+            </h1>
+
+            <div class="mb-6">
+                <label for="email" class=" ml-1 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <input type="email" id="email" class="ml-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ime@gmail.com" required/>
+            </div> 
+            <div class="mb-6">
+                <label for="name" class="ml-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ime i Prezime</label>
+                <input type="name" id="name" class="ml-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Anes" required/>
+            </div> 
+            <div class="mb-6">
+                <label for="password" class="ml-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                <input type="password" id="name" class="ml-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="*********" required/>
+            </div> 
+            <a
+              href="./src/assets/form.jsx"
+              type="button"
+              class="w-2/4 h-14 ml-8 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-2xl px-5 py-2.5 text-center mr-2 mb-2 "
+            >
+              <h1>Učlani se ovdje !</h1>
+            </a>
+
+          </div>
+        </form>
       </div>
-      <footer className="h-48 bg-footer mt-1">
-        <h1 className="text-plava text-center font-Kanit font-bold">Generalni sponzori</h1>
+      <footer className="h-48 bg-footer mt-2">
+        <h1 className="text-plava text-center font-Kanit font-bold">
+          Generalni sponzori
+        </h1>
         <div className="flex w-4/6 h-40 ml-60">
-          <img className="p-4" src="./Images/logo2.png"/>
-          <img className="p-4" src="./Images/logo3.png"/>
-          <img className="p-10" src="./Images/logo4.png"/>
-          <img className="p-10" src="./Images/logo1.png"/>
-        
+          <img className="p-4" src="./Images/logo2.png" />
+          <img className="p-4" src="./Images/logo3.png" />
+          <img className="p-10" src="./Images/logo4.png" />
+          <img className="p-10" src="./Images/logo1.png" />
         </div>
       </footer>
     </div>
